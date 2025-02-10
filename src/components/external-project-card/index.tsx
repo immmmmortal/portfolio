@@ -88,12 +88,12 @@ const ExternalProjectCard = ({
           window?.open(item.link, '_blank');
         }}
       >
-        <div className="p-8 h-full w-full">
+        <div className="p-6 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
+                  <h2 className="font-bold text-start text-xl opacity-80 mb-2">
                     {item.title}
                   </h2>
                   {item.imageUrl && (
@@ -111,8 +111,15 @@ const ExternalProjectCard = ({
                       </div>
                     </div>
                   )}
-                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                  <p className="mt-2 text-base-content text-opacity-80 text-sm text-start">
                     {item.description}
+                    {item.bulletpoints && item.bulletpoints.length > 0 && (
+                      <ul className="mt-2 list-disc pl-6 text-sm text-base-content text-opacity-60">
+                        {item.bulletpoints.map((point, i) => (
+                          <li key={i}>{point}</li>
+                        ))}
+                      </ul>
+                    )}
                   </p>
                 </div>
               </div>
@@ -142,7 +149,7 @@ const ExternalProjectCard = ({
                   </h5>
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                     {loading ? renderSkeleton() : renderExternalProjects()}
                   </div>
                 </div>

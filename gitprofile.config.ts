@@ -36,32 +36,30 @@ const CONFIG = {
           title: 'SneakSyncHub',
           description:
             'SneakSyncHub is a web scraping tool specifically designed to extract detailed information about sneakers from various online retail and sneaker websites.',
-          imageUrl: 'https://i.imgur.com/Sqxb69Y.png',
+          bulletpoints: [
+            'Developed a sneaker aggregator with Django, DRF, and Next.js, utilizing Selenium, reverse API engineering, and proxy rotation for real-time, reliable data scraping.',
+            'Integrated AI-powered NLP and visual similarity matching using spaCy, TF-IDF vectorization, and CLIP to recommend sneakers based on text descriptions and images.',
+            'Built a Celery-based notification system with a Telegram bot, automating user alerts and ensuring seamless sneaker discovery through AI-driven matching.',
+          ],
           link: 'https://github.com/immmmmortal/SneakSyncHub',
         },
         {
           title: 'Job Scraper',
           description:
             'JobScraper is a web scraping tool designed to extract job listings from various online job boards.',
-          imageUrl:
-            'https://www.pharmiweb.jobs/getasset/3a360c2b-7a7c-4267-b11e-cd772f65f5d8/',
+          bulletpoints: [
+            'Developed a web scraping tool with FastAPI, SQLAlchemy, and asyncio to extract job listings from multiple online job boards, ensuring efficient and scalable data collection.',
+            'Implemented data parsing and storage mechanisms using SQLAlchemy models to organize and store job information efficiently.',
+            'Optimized scraping performance using asyncio for asynchronous data fetching and FastAPI for high-performance API endpoints.',
+          ],
           link: 'https://github.com/immmmmortal/JobScraper',
         },
         {
           title: 'Portfolio',
           description:
-            'A showcase of my expertise in backend and full-stack development, featuring projects built with Python, Django, DRF, PostgreSQL, Redis, and modern frontend frameworks like Next.js and React.',
-          imageUrl:
-            'https://parametric-architecture.com/wp-content/uploads/2024/08/Architecture-Portfolio-Cover-1024x683.webp',
+            'A showcase of my expertise in front-end development,' +
+            ' featuring projects built with Python, Django, DRF, PostgreSQL, Redis, and modern frontend frameworks like Next.js and React.',
           link: 'https://github.com/immmmmortal/portfolio',
-        },
-        {
-          title: 'PhoneStore',
-          description:
-            'A phone store management system built with Django and DRF, featuring product catalog, orders, and user authentication.',
-          imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcXsq6Vma0MCBBMxyQpX725YxT4sBjastimg&s',
-          link: 'https://github.com/immmmmortal/PhoneStore',
         },
       ],
     },
